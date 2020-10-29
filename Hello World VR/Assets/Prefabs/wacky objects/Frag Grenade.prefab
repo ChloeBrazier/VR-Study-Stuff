@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 8172141096337356704}
   - component: {fileID: 8172141096337356708}
   - component: {fileID: 8172141096337356707}
+  - component: {fileID: -6279751304429811933}
   m_Layer: 0
   m_Name: Frag Grenade
   m_TagString: Untagged
@@ -203,6 +204,20 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 3.84
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &-6279751304429811933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 164568376717373095}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b03d7e2bc4277034fb13af2d0b2a97ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particles: {fileID: 4058934358827311284, guid: e0c022e8bd5cfdd4284c4e7cbb7c1dde,
+    type: 3}
 --- !u!1 &797231510963817435
 GameObject:
   m_ObjectHideFlags: 0
