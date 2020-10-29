@@ -9,8 +9,9 @@ public class PocketBehavior : MonoBehaviour
     //action bool for pulling something from your pockets
     public SteamVR_Action_Boolean itemPull;
 
-    //bool to check if the player can pull out an item
+    //bool to check if the player can pull out an item or place an item
     private bool canPull = false;
+    private bool canPlace = true;
 
     //list of items the player can pull (would be replaced with inventory system in future)
     public List<GameObject> sampleItems;
@@ -31,7 +32,7 @@ public class PocketBehavior : MonoBehaviour
             //save the input source of the hand
             SteamVR_Input_Sources source = hand.handType;
 
-            //check if the player can pull an item
+            //check if the player can pull or place an item
             if (canPull == true)
             {
                 if (itemPull[source].stateDown)
@@ -44,6 +45,10 @@ public class PocketBehavior : MonoBehaviour
                     Interactable itemInteract = newItem.GetComponent<Interactable>();
                     hand.AttachObject(newItem, GrabTypes.Pinch);
                     hand.HoverLock(itemInteract);
+                }
+                else if(itemPull[source].stateUp)
+                {
+                    canPlace = true;
                 }
             }
         }
@@ -65,12 +70,20 @@ public class PocketBehavior : MonoBehaviour
     private void OnTriggerStay(Collider other)
     {
         //check if the collider belongs to a hand
-        if (other.gameObject.GetComponentInParent<Hand>() != null)
+        if (other.gameObject.GetComponentInParent<Hand>() != null && other.gameObject.GetComponentInParent<Hand>().AttachedObjects.Count == 0)
         {
             //allow the player to pull out an object
             canPull = true;
 
             Debug.Log("can pull object");
+        }
+
+        //check if other collider belongs to interactable
+        if(other.gameObject.GetComponent<Interactable>() != null && other.gameObject.GetComponent<Interactable>().attachedToHand == null && canPlace == true)
+        {
+            //delete the object and add it to inventory (or you would if there was one)
+            Destroy(other.gameObject);
+            canPlace = false;
         }
     }
 }
