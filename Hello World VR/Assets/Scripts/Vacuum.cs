@@ -18,9 +18,9 @@ public class Vacuum : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.DrawLine(transform.position, transform.position - vacuumHead.transform.up * 10, Color.red);
+        Debug.DrawLine(vacuumHead.position, transform.position - vacuumHead.up * 10, Color.red);
         //cast out 
-        if(Physics.SphereCast(transform.position, 100f, -vacuumHead.transform.up, out RaycastHit hit, Mathf.Infinity))
+        if(Physics.SphereCast(transform.position, 100f, -vacuumHead.up, out RaycastHit hit, Mathf.Infinity))
         {
             if(hit.transform.gameObject.GetComponent<Interactable>() != null)
             {

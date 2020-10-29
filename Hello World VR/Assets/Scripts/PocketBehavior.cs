@@ -37,6 +37,9 @@ public class PocketBehavior : MonoBehaviour
             {
                 if (itemPull[source].stateDown)
                 {
+                    //play sound effect
+                    GetComponent<AudioSource>().Play();
+
                     //randomly pull a sample item
                     int randInt = Random.Range(0, sampleItems.Count);
 

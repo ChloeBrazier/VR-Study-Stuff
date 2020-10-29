@@ -20,10 +20,11 @@ public class VacuumHead : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        //delete the object if it's an interactable
+        //delete the object if it's an interactable and play sound effect
         if(other.gameObject.GetComponent<Interactable>() != null)
         {
             Destroy(other.gameObject);
+            GetComponent<AudioSource>().Play();
         }
     }
 }
