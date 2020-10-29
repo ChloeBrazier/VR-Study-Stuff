@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 5689275103436016972}
   - component: {fileID: 5689275103436016975}
   - component: {fileID: 5689275103436016974}
+  - component: {fileID: 4564574245585875976}
   m_Layer: 0
   m_Name: AssassinSword
   m_TagString: Untagged
@@ -70,7 +71,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   activateActionSetOnAttach:
     actionSetPath: 
-  hideHandOnAttach: 1
+  hideHandOnAttach: 0
   hideSkeletonOnAttach: 0
   hideControllerOnAttach: 0
   handAnimationOnPickup: 0
@@ -207,6 +208,19 @@ MonoBehaviour:
   previewPoseSelection: 0
   blendingBehaviours: []
   scale: 1
+--- !u!65 &4564574245585875976
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4455661496726738009}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.4145954, y: 0.31016013, z: 0.36603227}
+  m_Center: {x: -0.7072984, y: -0.032927327, z: -0.01619269}
 --- !u!1 &4744035666643711058
 GameObject:
   m_ObjectHideFlags: 0

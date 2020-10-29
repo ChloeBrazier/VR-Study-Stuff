@@ -332,6 +332,8 @@ MonoBehaviour:
     needsReinit: 0
   sampleItems:
   - {fileID: 4455661496726738009, guid: 7110ff6f2fe54ee49aad4679530f6d10, type: 3}
+  - {fileID: 4329286948206050724, guid: 57429378cca80b34181cbac74ee4f06f, type: 3}
+  - {fileID: 164568376717373095, guid: 55db178cedf73bb44b18de62f056256a, type: 3}
 --- !u!54 &673045831
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -697,3 +699,41 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a135b1a2cb9c8f488d4dd00c55ab283, type: 3}
+--- !u!1 &1102086386 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 165334, guid: dc06161b6d97feb419f45f03b62e14b9,
+    type: 3}
+  m_PrefabInstance: {fileID: 324724287}
+  m_PrefabAsset: {fileID: 0}
+--- !u!135 &1102086388
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1102086386}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.1
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &1509652919 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1000013428287994, guid: dc06161b6d97feb419f45f03b62e14b9,
+    type: 3}
+  m_PrefabInstance: {fileID: 324724287}
+  m_PrefabAsset: {fileID: 0}
+--- !u!135 &1509652921
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1509652919}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.1
+  m_Center: {x: 0, y: 0, z: 0}
