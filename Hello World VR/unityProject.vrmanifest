@@ -5,7 +5,7 @@
       "app_key": "application.generated.unity.helloworldvr.exe",
       "launch_type": "url",
       "url": "steam://launch/",
-      "action_manifest_path": "C:\\Users\\green\\Documents\\Unity Projects (No Git)\\Hello World VR\\Assets\\StreamingAssets\\SteamVR\\actions.json",
+      "action_manifest_path": "C:\\Users\\green\\Documents\\GitHub\\VR-Study-Stuff\\Hello World VR\\Assets\\StreamingAssets\\SteamVR\\actions.json",
       "strings": {
         "en_us": {
           "name": "Hello World VR [Testing]"

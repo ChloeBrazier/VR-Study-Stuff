@@ -10,22 +10,26 @@ public class Pockets : MonoBehaviour
     private bool setupComplete = false;
 
     //left pocket and right pocket gameobjects
-
+    //or maybe pocket prefab?
+    public GameObject pocket;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        //pockets.Add(leftPocket);
+        //pockets.Add(rightPocket);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(Player.instance.headsetOnHead.GetStateDown(SteamVR_Input_Sources.Head) && setupComplete != true)
-        {
-            //move pockets to player's approximate hip position
-
-            //parent pockets to player
-        }
+        pocket.transform.position = Player.instance.hmdTransform.position;
+        pocket.transform.forward = Player.instance.bodyDirectionGuess;
+        Vector3 tempVector = pocket.transform.position;
+        tempVector.y = Player.instance.eyeHeight/1.5f;
+        //tempVector.x = Player.instance.hmdTransform.position.x;
+        tempVector = tempVector + (Player.instance.bodyDirectionGuess.normalized * -0.35f);
+        pocket.transform.position = tempVector;
+        //Debug.Log("eye height: " + Player.instance.eyeHeight);
     }
 }

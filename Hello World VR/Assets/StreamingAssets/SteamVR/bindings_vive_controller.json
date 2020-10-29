@@ -126,7 +126,7 @@
             {
                "inputs" : {
                   "click" : {
-                     "output" : "/actions/default/in/grappleleft"
+                     "output" : "/actions/default/in/grabpinch"
                   }
                },
                "mode" : "button",
@@ -149,7 +149,7 @@
             {
                "inputs" : {
                   "click" : {
-                     "output" : "/actions/default/in/grappleright"
+                     "output" : "/actions/default/in/grabpinch"
                   }
                },
                "mode" : "button",
@@ -268,7 +268,7 @@
    },
    "category" : "steamvr_input",
    "controller_type" : "vive_controller",
-   "description" : "metroid VR YEAHHH",
+   "description" : "",
    "name" : "Saved Hello World VR [Testing] configuration for Vive Controller",
    "options" : {},
    "simulated_actions" : []
