@@ -112,7 +112,7 @@
             {
                "inputs" : {
                   "click" : {
-                     "output" : "/actions/default/in/grabgrip"
+                     "output" : "/actions/default/in/grappleleft"
                   }
                },
                "mode" : "button",
@@ -149,7 +149,7 @@
             {
                "inputs" : {
                   "click" : {
-                     "output" : "/actions/default/in/grabpinch"
+                     "output" : "/actions/default/in/grappleright"
                   }
                },
                "mode" : "button",
