@@ -19,6 +19,10 @@ public class SwordHead : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         //slice up some food
-
+        if(other.gameObject.tag == "Food")
+        {
+            //set food as sliced or something
+            other.gameObject.GetComponent<Food>().Chop();
+        }
     }
 }

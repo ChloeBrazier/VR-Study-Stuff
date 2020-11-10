@@ -48,9 +48,11 @@ public class MixerHead : MonoBehaviour
     private void OnTriggerStay(Collider other)
     {
         //if the mixer is spinning, check collision
-        if(spin)
+        if(spin && other.gameObject.tag == "Food")
         {
             Debug.Log("Mixing Stuff Up");
+            //set food as mixed or something
+            other.gameObject.GetComponent<Food>().Mix();
         }
     }
 }
