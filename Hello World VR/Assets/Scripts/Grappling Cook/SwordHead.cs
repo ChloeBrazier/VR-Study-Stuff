@@ -15,4 +15,10 @@ public class SwordHead : MonoBehaviour
     {
         
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        //slice up some food
+
+    }
 }

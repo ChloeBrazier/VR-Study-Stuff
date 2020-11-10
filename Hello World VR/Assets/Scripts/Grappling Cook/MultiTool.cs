@@ -91,7 +91,12 @@ public class MultiTool : MonoBehaviour
             //return grapple head to starting position once it returns
             if (Vector3.Distance(transform.position, activeHead.transform.position) < 1 && resetGrapple == true)
             {
-                //reset grappling hook
+                //reset grappling hook and drop any held items
+                if(activeHead.GetComponent<GrappleHead>().heldItem != null)
+                {
+                    activeHead.GetComponent<GrappleHead>().DropItem();
+                }
+
                 activeHead.GetComponent<Rigidbody>().isKinematic = true;
                 activeHead.transform.position = grappleReturn.position;
                 activeHead.transform.forward = grappleReturn.forward;

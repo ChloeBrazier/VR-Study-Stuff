@@ -41,7 +41,7 @@ public class MixerHead : MonoBehaviour
         //if the mixer's spinning, rotate it
         if(spin)
         {
-            transform.Rotate(0, 0, 20);
+            transform.Rotate(0, 0, 40);
         }
     }
 
