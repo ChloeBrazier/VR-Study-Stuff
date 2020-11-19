@@ -20,7 +20,7 @@ public class LaserCollide : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.tag == "Hand")
+        if(other.gameObject.tag == "Hand")
         {
             Debug.Log("Hand dandy collision!");
             player.transform.position = Vector3.zero;
