@@ -7,6 +7,9 @@ TagManager:
   - GrapplePoint
   - Floor
   - Food
+  - projectile
+  - FxTemporaire
+  - Hand
   layers:
   - Default
   - TransparentFX
@@ -16,7 +19,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - Lasers
   - 
   - 
   - 

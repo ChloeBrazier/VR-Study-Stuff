@@ -48,6 +48,7 @@ public class HackerController : MonoBehaviour
     public void SetCam(int index)
     {
         activeCam.texture = securityCamList[index];
+        
     }
 
     public void OpenDoor(GameObject door)
