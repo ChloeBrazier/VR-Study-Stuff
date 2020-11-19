@@ -26,4 +26,6 @@ public class LaserCollide : MonoBehaviour
             player.transform.position = Vector3.zero;
         }
     }
+
+
 }
